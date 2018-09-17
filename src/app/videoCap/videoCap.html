@@ -1,0 +1,25 @@
+<ion-grid>
+    <ion-row class="vid-row">
+        <ion-col class="vid-col">
+            <canvas #canvasEl doubletap (ondoubletap)="onCanvasDblTap($event)"></canvas>
+            <!-- TODO dynamically append this to canvas instead of hiding and using it -->
+            <!-- <img id="overlayImg" #overlayImg hidden="true" src="assets/imgs/Mr._Hankey_transparent.png" /> -->
+        </ion-col>
+    </ion-row>
+    <ion-row class="btn-row" [hidden]="_playing">
+        <ion-col col-6>
+            <button ion-button full 
+                color="light" 
+                (click)="cancel()">
+                CANCEL
+            </button>
+        </ion-col>
+        <ion-col col-6>
+            <button ion-button full 
+                color="primary" 
+                (click)="startRecording()">
+                Record
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-grid>

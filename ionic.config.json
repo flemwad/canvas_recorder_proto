@@ -1,0 +1,7 @@
+{
+  "name": "cibc_promise_app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
